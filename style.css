@@ -1,11 +1,14 @@
 :root {
   font-size: 62.5%;
 
-  --blue: #065e7c;
-  --bkg-blue: #387e96;
+  --main-hue: 195;
+  --secondary-hue: 240;
+
+  --blue: hsl(var(--main-hue), 90%, 25%);
+  --bkg-blue: hsl(var(--main-hue), 45.63%, 40.39%);
   --white: #fff;
-  --dark-text: #202024;
-  --darker-text: #121214;
+  --dark-text: hsl(var(--secondary-hue), 5.88%, 13.33%);
+  --darker-text: hsl(var(--secondary-hue), 5.26%, 7.45%);
 }
 
 * {
