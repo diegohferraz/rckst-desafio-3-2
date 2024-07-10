@@ -66,6 +66,7 @@ aside {
 #hero-img {
   aspect-ratio: 16/9;
   width: 100%;
+  border-radius: 8px;
 }
 
 h1,
@@ -156,4 +157,30 @@ footer p {
   font-size: 1.6rem;
   color: var(--white);
   margin: 0;
+}
+
+@media (min-width: 76.9rem) {
+  .container {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  #mainContainer {
+    margin-top: 4.4rem;
+    display: grid;
+    grid-template-areas: "C C C C S";
+  }
+
+  #mainContainer main {
+    grid-area: C;
+  }
+  #mainContainer aside {
+    grid-area: S;
+  }
+
+  #content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
