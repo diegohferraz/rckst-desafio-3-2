@@ -65,6 +65,7 @@ aside {
 
 #hero-img {
   aspect-ratio: 16/9;
+  width: 100%;
 }
 
 h1,
@@ -96,6 +97,9 @@ h2 {
 
 #btns button:hover {
   cursor: pointer;
+  background-color: var(--bkg-blue);
+  scale: 1.2;
+  transition: all ease 0.2s;
 }
 
 #content-header {
@@ -135,6 +139,11 @@ aside ul li img {
   width: 15rem;
   object-fit: cover;
   border-radius: 4px;
+}
+
+aside ul li:hover img {
+  transform: scale(1.1) rotate(5deg);
+  transition: all ease-in 0.2s;
 }
 
 footer {
