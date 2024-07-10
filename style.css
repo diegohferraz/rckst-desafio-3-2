@@ -1,7 +1,8 @@
 :root {
-  font-size: 67.5%;
+  font-size: 62.5%;
 
   --blue: #065e7c;
+  --bkg-blue: #387e96;
   --white: #fff;
   --dark-text: #202024;
   --darker-text: #121214;
@@ -13,8 +14,134 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+input {
   font-family: "Mulish", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
+}
+
+header {
+  padding: 1.6rem 2.4rem;
+  background-color: var(--bkg-blue);
+}
+
+header > div {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+header img {
+  border-radius: 50%;
+}
+
+header form {
+  flex-grow: 1;
+}
+
+header form input {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 4px;
+  color: var(--white);
+  font-weight: 600;
+}
+
+header input::placeholder {
+  color: var(--white);
+  font-weight: 600;
+}
+
+main > div > div,
+aside {
+  padding: 0 2.2rem;
+}
+
+#hero-img {
+  aspect-ratio: 16/9;
+}
+
+h1,
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 3.2rem 0 0.8rem;
+}
+
+#btns {
+  display: flex;
+  gap: 1.2rem;
+}
+
+#btns button {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--blue);
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btns button:last-child img {
+  transform: rotate(180deg);
+}
+
+#btns button:hover {
+  cursor: pointer;
+}
+
+#content-header {
+  margin-bottom: 3.2rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 160%;
+  margin-bottom: 1.2rem;
+}
+
+aside ul {
+  list-style: none;
+  margin-top: 3.2rem;
+}
+
+aside ul li {
+  display: flex;
+  margin-bottom: 3.2rem;
+  gap: 16px;
+}
+
+aside ul li h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+aside ul li p {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+aside ul li img {
+  height: 100%;
+  width: 15rem;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: var(--bkg-blue);
+  padding: 2.6rem 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.6rem;
+  color: var(--white);
+  margin: 0;
 }
